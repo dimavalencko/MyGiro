@@ -1,0 +1,29 @@
+.app__header {
+  display: flex;
+  height: 140px;
+  border-bottom: 1px #007bff solid;
+}
+
+.app-header__container {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header__company-logo {
+  max-width: 10rem;
+}
+
+.company-logo_image {}
+
+.header__company-phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {}
+
+.btn-outline-primary {}
