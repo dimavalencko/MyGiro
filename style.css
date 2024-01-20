@@ -1,7 +1,6 @@
 @import './assets/styles/reset.css';
 @import './assets/styles/header.css';
 @import './assets/styles/content.css';
-@import './assets/styles/footer.css';
 @import './app/slider/slider.css';
 @import './bootstrap/bootstrap.min.css';
 @import './bootstrap/bootstrap.min.css.map';
@@ -14,5 +13,11 @@
   background-color: aliceblue;
   width: 100vw;
   height: 100%;
-  overflow: auto;
+}
+
+.width_container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
 }

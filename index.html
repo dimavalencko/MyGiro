@@ -4,22 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giro-Pro</title>
+  <title>My Giro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="app">
     <div class="app__header">
-      <div class="app-header__container">
+      <div class="app-header__container width_container">
 
         <div class="header__company-logo">
           <img class="company-logo_image" src="./assets/images/icons/logo-blue.png" />
         </div>
 
         <div class="header__company-phone">
-          <span>+7(800)555-35-35</span>
-          <button type="button" class="btn-outline-primary">Заказать звонок</button>
+          <span>Москва, Набережная 2 оф. 142</span>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <span>+7(800)555-35-35</span>
+            <button type="button" class="btn-outline-primary">Заказать звонок</button>
+
+          </div>
         </div>
 
       </div>
@@ -31,13 +35,32 @@
           <div class="carousel-window">
             <div class="carousel-slides">
               <div class="carousel-item">
-                <img class="carousel-item__img" src="./assets/images/useful_info/11.jpg">
+                <img class="carousel-item__img" src="./assets/images/slider_photo/giro_1.jpg">
+                <div class="company-adventages__block">
+                  <img class="adventages__image" src="./assets/images/advantages/1.png"/>
+                  <div class="adventages__title">Большой ассортимент</div>
+                </div>
               </div>
               <div class="carousel-item">
-                <img class="carousel-item__img" src="./assets/images/useful_info/2.jpg">
+                <img class="carousel-item__img" src="./assets/images/slider_photo/giro_2.jpg">
+                <div class="company-adventages__block">
+                  <img class="adventages__image" src="./assets/images/advantages/4.png"/>
+                  <div class="adventages__title">Быстрая доставка</div>
+                </div>
               </div>
               <div class="carousel-item">
-                <img class="carousel-item__img" src="./assets/images/useful_info/3.jpg">
+                <img class="carousel-item__img" src="./assets/images/slider_photo/giro_3.jpg">
+                <div class="company-adventages__block">
+                  <img class="adventages__image" src="./assets/images/advantages/3.png"/>
+                  <div class="adventages__title">Гарантия качества</div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-item__img" src="./assets/images/slider_photo/giro_4.jpg">
+                <div class="company-adventages__block">
+                  <img class="adventages__image" src="./assets/images/advantages/2.png"/>
+                  <div class="adventages__title">Онлайн консультант</div>
+                </div>
               </div>
             </div>
           </div>
@@ -50,29 +73,26 @@
         </div>
       </div>
 
-      <div class="content-gyro-features__block">
-        <h5>Особенности гироскутеров</h5>
+      <div class="content-gyro-features__block  width_container">
+        <h4>Особенности гироскутеров</h4>
 
         <div class="features-content__block">
           <h6>Начнём с минусов:</h6>
 
           <span class="giro-features__text">
-            <p>Трясёт. 6-дюймовые колёса «самокатного» типа достаточно жёсткие – естественно, что они отрабатывают
+            <p>- Трясёт. 6-дюймовые колёса «самокатного» типа достаточно жёсткие – естественно, что они отрабатывают
               микропрофиль дороги хуже, чем классические колёса с покрышками. Но, за счёт того, что гироскутер может
               ехать по пешеходным дорожкам, минус этот минусом и не является: просто выбирайте путь с хорошим асфальтом,
               за
               пределами автодорог это достаточно просто сделать. Или сразу же выбирайте гироскутер с колесами 10 дюймов;
             </p>
-            <br />
-            <p>Нет сиденья. А зачем оно Вам, если поездка длится в среднем 10-15 минут? Гироскутер не предназначен для
+            <p>- Нет сиденья. А зачем оно Вам, если поездка длится в среднем 10-15 минут? Гироскутер не предназначен для
               путешествий на дальние расстояния, его стихия – быстрые и короткие поездки;</p>
-            <br />
-            <p>Только для одного. Вот с этим ничего не поделать: гироскутер - это именно личное средство передвижения.
+            <p>- Только для одного. Вот с этим ничего не поделать: гироскутер - это именно личное средство передвижения.
               Если Вам нужен транспорт для компании, выбирайте что-нибудь другое.</p>
-            <br />
 
-            <p> С минусами разобрались, теперь можем перейти к преимуществам гироскутеров. Итак, в сравнении с почти
-              любым другим видом моторного транспорта, гироцикл может похвастаться:</p>
+            <span> С минусами разобрались, теперь можем перейти к преимуществам гироскутеров. Итак, в сравнении с почти
+              любым другим видом моторного транспорта, гироцикл может похвастаться:</span>
             <p>- Исключительной компактностью и небольшим весом. Он легко помещается и в специальный чехол, и в рюкзак, и
               в спортивную сумку – да его даже просто в руках нести удобно. Соответственно, проблема с парковкой решена
               раз и навсегда: добрались до места, убрали гироскутер в сумку и спокойно идёте дальше;</p>
@@ -91,14 +111,194 @@
 
       </div>
 
+      <div class="products-list__wrapper width_container">
+        <h4>Список товаров</h4>
 
+        <div class="products-filter-items__block">
+          <div id="filter__giro" class="product-filter__item active" onclick="changeFilter(event, 'giro')">Гироскутеры</div>
+          <div id="filter__scooter" class="product-filter__item active" onclick="changeFilter(event, 'scooter')">Электросамокаты</div>
+          <div id="filter__sigway" class="product-filter__item active" onclick="changeFilter(event, 'sigway')">Сигвеи</div>
+        </div>
+        
+        <div class="products__list">
+          <div class="product-type-blocks__list">
+           
+            <div id="products-list__giro" class="product-type__block">
+              <h5>Гироскутеры</h5>
+              
+              <div class="product-list__block">
+                <div class="product-list__item">
+                  <h6>Smart Balance 10 Красный</h6>
+                  <img src="./assets/images/catalog/giroscooters/1.jpg"/>
+                  <h6>Цена: 6500 р</h6>
+                </div>
+  
+                <div class="product-list__item">
+                  <h6>Smart Balance Premium 10 Цветные Молнии</h6>
+                  <img src="./assets/images/catalog/giroscooters/2.jpg"/>
+                  <h6>Цена: 10 990 р</h6>
+                </div>
+
+                <div class="product-list__item">
+                  <h6>Smart Balance SUV Черная Молния 10.5" Premium PRO</h6>
+                  <img src="./assets/images/catalog/giroscooters/3.jpg"/>
+                  <h6>Цена: 8 590 р</h6>
+                </div>
+              </div>
+            </div>
+
+            <div id="products-list__scooter" class="product-type__block">
+              <h5>Электросамокаты</h5>
+              
+              <div class="product-list__block">
+                <div class="product-list__item">
+                  <h6>Xiaomi Mijia Electric Scooter m187 Black</h6>
+                  <img src="./assets/images/catalog/electric_scooters/1.jpg"/>
+                  <h6>Цена: 20 480 р</h6>
+                </div>
+  
+                <div class="product-list__item">
+                  <h6>KUGOO S4 (8800mAh)</h6>
+                  <img src="./assets/images/catalog/electric_scooters/2.jpg"/>
+                  <h6>Цена: 13 480 р</h6>
+                </div>
+
+                <div class="product-list__item">
+                  <h6>SUBOR D9</h6>
+                  <img src="./assets/images/catalog/electric_scooters/3.jpg"/>
+                  <h6>Цена: 11 790 р</h6>
+                </div>
+              </div>
+            </div>
+
+            <div id="products-list__sigway" class="product-type__block">
+              <h5>Сигвеи</h5>
+              
+              <div class="product-list__block">
+                <div class="product-list__item">
+                  <h6>Xiaomi Ninebot mini Pro Black (Черный)</h6>
+                  <img src="./assets/images/catalog/segways/1.jpg"/>
+                  <h6>Цена: 31 480 р</h6>
+                </div>
+  
+                <div class="product-list__item">
+                  <h6>Xiaomi Ninebot mini Pro White (Белый)</h6>
+                  <img src="./assets/images/catalog/segways/2.jpg"/>
+                  <h6>Цена: 31 480 р</h6>
+                </div>
+
+                <div class="product-list__item">
+                  <h6>Xiaomi Ninebot mini White (Белый)</h6>
+                  <img src="./assets/images/catalog/segways/3.jpg"/>
+                  <h6>Цена: 14 790 р</h6>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="company-consultants__block width_container">
+        <h4>Наши консультанты</h4>
+        <div class="consultants__list">
+
+          <div class="conultants-list__item">
+            <img src="./assets/images/consultants/1.png"/>
+            <h5>Наталья</h5>
+            <span>Кто это? Приходит каждый день к нам, но работает у нас или нет - никто не знает. Ну если за бесплатно - почему бы и нет</span>
+          </div>
+
+          <div class="conultants-list__item">
+            <img src="./assets/images/consultants/2.png"/>
+            <h5>Олеся</h5>
+            <span>Менеджер по продажам. Вроде работает. А может просто хорошо создает видимость работы</span>
+          </div>
+
+          <div class="conultants-list__item">
+            <img src="./assets/images/consultants/3.png"/>
+            <h5>Евгений</h5>
+            <span>Продавец-консультант. Молодец. Респект ему. Хорошо работает, один из лучших работников</span>
+          </div>
+
+          <div class="conultants-list__item">
+            <img src="./assets/images/consultants/4.png"/>
+            <h5>Наталья 200м от вас</h5>
+            <span>Продавец-консультант. Она всега рядом с вами. Все расскажет, подскажет. Мастер своего дела</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="brands-sold__container width_container">
+        <h4>Наши бренды</h4>
+
+        <div class="brands-sold__list">
+          <img class="brands-sold__item" src="./assets/images/brands/xiaomi.png"></img>
+          <img class="brands-sold__item" src="./assets/images/brands/smart.png"></img>
+          <img class="brands-sold__item" src="./assets/images/brands/balance.png"></img>
+          <img class="brands-sold__item" src="./assets/images/brands/linbol.png"></img>
+          <img class="brands-sold__item" src="./assets/images/brands/kugoo.png"></img>
+          <img class="brands-sold__item" src="./assets/images/brands/subor.png"></img>
+          <img class="brands-sold__item" src="./assets/images/brands/airwheel.png"></img>
+        </div>
+      </div>
+
+      <div class="useful-info__container width_container">
+        <h4>Полезная информация</h4>
+        <div class="useful-info__item">
+          <img src="./assets/images/useful_info/1.jpg"/>
+          <span>Как выбрать гироскутер? Советы перед покупкой</span>
+        </div>
+        <div class="useful-info__item">
+          <span>Электросамокат. Какой лучше и как выбрать?</span>
+          <img src="./assets/images/useful_info/2.jpg"/>
+        </div>
+        <div class="useful-info__item">
+          <img src="./assets/images/useful_info/3.jpg"/>
+          <span>Как выбрать сигвей? На что обратить внимание?</span>
+        </div>
+        <div class="useful-info__item">
+          <span>Советы по выбору гироскутера для ребенка.</span>
+          <img src="./assets/images/useful_info/4.jpg"/>
+        </div>
+        
+      </div>
+
+      <div class="about-company__container width_container">
+        <h4>О компании</h4>
+        
+        <span>
+          В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от известных мировых производителей.
+          Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области.
+          Купить гироскутер, электросамокат или сигвей недорого, Вы можете в нашем интернет-магазине в любое время, когда Вам удобно. 
+          Доставка заказов осуществляется бесплатно, в любую точку России.
+          Так же, вы можете заказать гироскутер, сигвей или электросамокат по низкой цене, позвонив нам.
+          Или сделайте заказ, пообщавшись с нашим онлайн-консультантом консультантам.
+          Продажа гироскутеров, электросамокатов и сигвеев, осуществляется напрямую, от производителей. 
+          Поэтому, в нашем интернет-магазине самые лучшие цены. 
+        </span>
+
+        <div class="info-mailing__container">
+          <h6>Подпишитесь на нашу рассылку!</h6>
+          <input type="text" placeholder="Введите имя"/>
+          <input type="text" placeholder="Введите email"/>
+          <button type="button" class="btn-outline-primary">Подписаться</button>
+        </div>
+      </div>
     </div>
 
-    <div class="app__footer">
-      footer content
+    <button id="to-top-btn" class="back-to-up__button" onclick="scrollToTop()">
+      <img src="./assets/images/icons/go_up.png"/>
+    </button>
+
+
+    <div class="app__footer width_container">
     </div>
 
     <script defer src="./app/slider/slider.js"></script>
+    <script defer src="./app/filtration/index.js"></script>
+    <script defer src="./app/back-to-top/index.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         new Slider(document.querySelector('.carousel'));

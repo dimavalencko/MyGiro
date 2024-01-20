@@ -1,15 +1,222 @@
 .app__content {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    padding-top: 2rem;
-    gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 4.25rem;
+}
+
+.content-gyro-features__block {
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.giro-features__text {
+  text-indent: 2rem;
+}
+
+.products-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.products-filter-items__block {
+  display: flex;
+  gap: 1rem;
+}
+
+.products-filter-items__block .active {
+  background-color: rgb(138, 199, 255);
+  color: white;
+}
+
+.product-filter__item {
+  transition: all 0.3s;
+  padding: 1rem;
+  background-color: white;
+  border: 1px #007bff38 solid;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.product-filter__item:hover {
+  background-color: rgb(226, 241, 255);
+  color: black;
 }
 
 
 
-.content-gyro-features__block { padding: 1rem; }
+.products__list {}
 
-.giro-features__text {
-    text-indent: 2rem;
+.product-type-blocks__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product-type__block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.product-list__block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.product-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 31%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  height: 100%;
+}
+.product-list__item img {
+  width: auto;
+  border-radius: 1rem;
+  border: 1px #007bff38 solid;
+}
+
+/* Консультнты */
+
+.company-consultants__block {
+  padding: 1rem;
+  background-image: url('../images/icons/first-page-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 768px;
+  color: white;
+}
+
+.consultants__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  padding-top: 1.25rem;
+  text-align: center;
+}
+.conultants-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 290px;
+  flex: 1 1 auto;
+  width: 23.3%;
+}
+.conultants-list__item img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1920px) {
+  .conultants-list__item {
+    width: 23%;
+  } 
+}
+@media (max-width: 1280px) {
+  .conultants-list__item {
+    width: 31%;
+  } 
+  .company-consultants__block {
+    height: 1280px;
+  }
+}
+@media (max-width: 649px) {
+  .conultants-list__item {
+    width: 31%;
+  } 
+  .company-consultants__block {
+    height: 1820px;
+  }
+}
+
+
+/* Бренды */
+.brands-sold__container {
+  display: flex;
+  flex-direction: column;
+}
+.brands-sold__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.brands-sold__item {
+  width: 168px;
+  height: 98px;
+}
+
+
+.useful-info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1 1 auto;
+}
+.useful-info__item {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.useful-info__item span{
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .useful-info__item img {
+    display: none;
+  }
+}
+
+.about-company__container span{
+  font-size: 18px;
+  line-height: 1rem;
+}
+.info-mailing__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.info-mailing__container input {
+  width: 100%;
+  height: 48px;
+  border: 1px #007bff38 solid;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.back-to-up__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  border: 1px #007bff38 solid;
+  border-radius: 0.5rem;
+  background-color: #9cccff;
+  cursor: pointer;
+  outline: none;
+}
+
+.back-to-up__button img {
+  width: 48px;
 }
